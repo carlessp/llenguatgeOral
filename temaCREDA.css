@@ -1,1 +1,144 @@
+:root {
+    --r-background-color: #ffffff;
+    --r-main-color: #003a85;
+    /* --r-main-color: #19B3FB; */
+    --r-main-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+      segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+      sans-serif;
+    --r-main-font-size: 40px;
+    --r-block-margin: 20px;
+    --r-heading-margin: 0 0 20px 0;
+    --r-heading-font: League Gothic, Impact, sans-serif;
+    --r-heading-color: #003a85;
+    --r-heading-line-height: 1.2;
+    --r-heading-letter-spacing: normal;
+    --r-heading-text-transform: none;
+    --r-heading-text-shadow: none;
+    --r-heading-font-weight: normal;
+    --r-heading1-text-shadow: none;
+    --r-heading1-size: 3.77em;
+    --r-heading2-size: 2.11em;
+    --r-heading3-size: 1.55em;
+    --r-heading4-size: 1em;
+    --r-code-font: Fira Code, Menlo, Consolas, Monaco, Liberation Mono,
+      Lucida Console, monospace;
+    --r-link-color: #003A85;
+    --r-link-color-dark: #4D499D;
+    --r-link-color-hover: #8058B2;
+    --r-selection-background-color: #AE2074;
+    --r-selection-color: #fff;
+  
+    --r-bold-color: #003A85;
+    --r-italic-color: #4D499D;
+    --r-inline-code-color: #8058B2;
+    --r-list-bullet-color: #B066C4;
+  }
+  
+  .reveal-viewport {
+    background: linear-gradient(to bottom, #003a85 0%, #003a85 25%, #ffffff 25%, #ffffff 100%);
+  }
+  
+  .reveal {
+    font-family: var(--r-main-font);
+    font-size: var(--r-main-font-size);
+    font-weight: normal;
+    color: #333; /* Canviat a un color fosc per millorar la llegibilitat sobre fons blanc */
+  }
+  
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    color: var(--r-heading-color);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  .reveal a {
+    color: var(--r-link-color);
+  }
+  
+  .reveal a:hover {
+    color: var(--r-link-color-hover);
+  }
+  
+  .reveal .controls {
+    color: var(--r-main-color);
+  }
+  
+  .reveal .progress {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--r-main-color);
+  }
+  
+  .reveal b,
+  .reveal strong {
+    color: var(--r-bold-color);
+  }
+  
+  .reveal em,
+  .reveal i,
+  .reveal blockquote {
+    color: var(--r-italic-color);
+  }
+  
+  .reveal code {
+    color: var(--r-inline-code-color);
+    background-color: rgba(0,0,0,0.05);
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  
+  .reveal ol,
+  .reveal ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 0 1em;
+  }
+  .reveal ol {
+    list-style-type: decimal;
+  }
+  .reveal ul {
+    list-style-type: disc;
+  }
+  .reveal ul ul {
+    list-style-type: square;
+  }
+  .reveal ul ul ul {
+    list-style-type: circle;
+  }
+  .reveal ol ol,
+  .reveal ol ul,
+  .reveal ul ol,
+  .reveal ul ul {
+    display: block;
+    margin-left: 40px;
+  }
+  .reveal ul li::marker {
+    color: #003a85;
+  }
+  /* Estil addicional per a les diapositives */
+  .reveal .slides > section,
+  .reveal .slides > section > section {
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+  }
+.corner-text2 {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    /* color: #fff;
+    background-color: #19B3FB; */
+    color: #003a85;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
 
