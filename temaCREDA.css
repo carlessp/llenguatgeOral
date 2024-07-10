@@ -35,7 +35,7 @@
   }
   
   .reveal-viewport {
-    background: linear-gradient(to bottom, #003a85 0%, #003a85 20%, #ffffff 20%, #ffffff 100%);
+    background: linear-gradient(to bottom, #003a85 0%, #003a85 10%, #ffffff 10%, #ffffff 100%);
   }
   
   .reveal {
@@ -53,6 +53,7 @@
   .reveal h6 {
     color: var(--r-heading-color);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    /* background-color: #fff; */
   }
   
   .reveal a {
@@ -81,7 +82,32 @@
   .reveal i,
   .reveal blockquote {
     color: var(--r-italic-color);
-  }
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: var(--r-block-margin) auto;
+    padding: 20px;
+    font-style: italic;
+    background: #f9f9f9; /* Fons suau */
+    border-left: 5px solid var(--r-main-color); /* Barra de color a l'esquerra */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombra suau */
+    border-radius: 5px; /* Cantonades arrodonides */
+}
+
+.reveal blockquote:before {
+    /* content: "\201C"; */
+    font-size: 4em;
+    color: var(--r-main-color);
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.reveal blockquote p {
+    margin: 0;
+    text-align: center; /* Text centrat */
+}
+
   
   .reveal code {
     color: var(--r-inline-code-color);
@@ -122,20 +148,20 @@
   .reveal .slides > section,
   .reveal .slides > section > section {
     padding: 20px 0;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 5px;
     /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   }
 .corner-text2 {
     position: fixed;
-    top: 10px;
+    top: 5px;
     left: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
     /* color: #fff;
     background-color: #19B3FB; */
     color: #003a85;
     background-color: #fff;
-    padding: 5px 10px;
+    padding: 0px 10px 0px 10px;
     border-radius: 5px;
     z-index: 1000;
 }
